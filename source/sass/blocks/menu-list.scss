@@ -1,0 +1,14 @@
+.menu-list {
+  list-style: none;
+
+  a {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include main_font_index($color: $white, $line-height: 40px, $font-size: 18px, $font-weight: bold);
+  }
+}
+
+.menu-list__item {
+  background-color: #81b3d2;
+}

@@ -1,5 +1,12 @@
-// Начните писать стили здесь
+// Переменные, миксины и прочие стили
+@import "variables.scss";
+@import "mixins.scss";
+@import "other-styles.scss";
+
+// Подключение стилей для блоков БЭМ
 @import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/menu-list.scss";
 
 body {
   background-color: blue;

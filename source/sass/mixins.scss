@@ -1,0 +1,9 @@
+@mixin main_font_index($font-size: 14px, $line-height: 21px, $font-weight: normal, $color: #333333) {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+  text-transform: uppercase;
+}
