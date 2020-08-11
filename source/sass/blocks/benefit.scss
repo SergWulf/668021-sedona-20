@@ -1,0 +1,47 @@
+.benefit {
+  background-color: #eeeeee;
+}
+
+.benefit__header,
+.benefit__number,
+.benefit__description {
+  text-align: center;
+}
+
+.benefit--with-list,
+.benefit--with-image {
+  .benefit__header {
+    @include main_font_index($color:$white, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+  }
+
+  .benefit__description,
+  .benefit__number {
+    @include main_font_index($color:$white, $font-size: 14px, $line-height: 21px);
+  }
+  background-color: #81b3d2;
+}
+
+.benefit--with-list {
+  position: relative;
+
+  .benefit__header {
+    padding-top: 50px;
+  }
+
+  .benefit__description {
+    padding-bottom: 40px;
+  }
+}
+
+.benefit--with-list::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 160px solid transparent;
+  border-top-width: 25px;
+  border-top-color: $white;
+  border-bottom-width: 0;
+  left: 0;
+  top: 0;
+}

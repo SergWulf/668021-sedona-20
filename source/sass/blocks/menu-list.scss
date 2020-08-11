@@ -3,8 +3,6 @@
 
   a {
     @include main_font_index($color: $white, $line-height: 40px, $font-size: 18px, $font-weight: bold);
-    color: #ffffff;
-    text-transform: uppercase;
     text-decoration: none;
   }
 }
