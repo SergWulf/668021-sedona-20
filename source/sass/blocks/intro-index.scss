@@ -1,13 +1,12 @@
-.intro {
+.intro-index {
   position: relative;
   overflow: hidden;
   min-width: 320px;
-  min-height: 160px;
-  max-height: 160px;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat -225px -230px;
+  min-height: 390px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat -220px 0;
 }
 
-.intro::after {
+.intro-index::after {
   content: "";
   position: absolute;
   width: 0;
@@ -20,9 +19,9 @@
   bottom: 0;
 }
 
-.intro__image {
+.intro-index__image {
   position: absolute;
-  width: 230px;
-  left: 45px;
-  top: 50px;
+  width: 280px;
+  left: 20px;
+  top: 18px;
 }

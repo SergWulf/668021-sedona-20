@@ -5,27 +5,27 @@
   <title>HTML Academy: Седона - форма отзыва</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="container">
 <header class="page-header">
   <nav class="main-nav">
     <ul class="main-nav__list menu-list">
       <li class="menu-list__item">
-        <a href="#">Главная</a>
+        <a href="index.html">Главная</a>
       </li>
       <li class="menu-list__item">
-        <a href="#">Фото и видео</a>
+        <a href="photo.html">Фото и видео</a>
       </li>
       <li class="menu-list__item menu-list__item--active">
         <a href="#">Форма отзыва</a>
       </li>
       <li class="menu-list__item">
-        <a href="#">HTML ACADEMY</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
       </li>
     </ul>
     <button class="main-nav__menu-close" aria-label="Скрыть меню"></button>
   </nav>
   <div class="top-menu">
-    <a class="top-menu__logo-link">
+    <a class="top-menu__logo-link" href="index.html">
       <img class="top-menu__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
     </a>
     <button class="top-menu__open" aria-label="Показать меню"></button>
@@ -33,7 +33,7 @@
 </header>
 <main class="page-content">
   <div class="intro">
-    <a class="intro__link" href="#"><img class="intro__image" src="https://via.placeholder.com/320x360" alt="Седона"></a>
+    <a class="intro__link" href="#"><img class="intro__image" src="img/text-sedona.svg" width="230" alt="Седона"></a>
   </div>
   <section class="feedback">
     <h1 class="feedback__header">Оставьте свой отзыв</h1>
@@ -114,8 +114,12 @@
       <a class="social-list__link social-list__link--youtube" href="#" aria-label="youtube"></a>
     </li>
   </ul>
-  <p class="page-footer__developed-header">Разработано</p>
-  <a class="page-footer__logo-link" href="#"><img class="page-footer__logo" src="https://via.placeholder.com/28x34" alt="Логотип"></a>
+  <div class="page-footer__developed">
+    <p class="page-footer__developed-header">Разработано</p>
+    <a class="page-footer__logo-link"href="https://htmlacademy.ru/intensive/adaptive">
+      <img class="page-footer__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип">
+    </a>
+  </div>
 </footer>
 </body>
 </html>
