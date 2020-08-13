@@ -1,0 +1,34 @@
+.search-hotel__header {
+  @include main_font_index($color:$black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  text-align: center;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 22px;
+}
+
+.search-hotel__description {
+  @include main_font_index($color:$gray, $font-size: 14px, $line-height: 24px);
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.search-hotel__find {
+  @include main_font_index($color:$white, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  display: flex;
+  width: 280px;
+  height: 58px;
+  background-color: $blue;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.search-hotel__link-map {
+  display: block;
+  margin-top: 50px;
+  width: 320px;
+  height: 350px;
+}
