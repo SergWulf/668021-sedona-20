@@ -1,0 +1,41 @@
+.card-photo {
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  a {
+    display: block;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+  }
+}
+
+.card-photo__header {
+  @include main_font_index($color:$black, $font-size: 14px, $line-height: 24px, $font-weight: bold);
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 0;
+  padding-left: 20px;
+}
+
+.card-photo__author {
+  @include main_font_index($color:$gray, $font-size: 14px, $line-height: 24px, $text-transform: normal);
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.card-photo__count-likes {
+  @include main_font_index($color:$black, $font-size: 14px, $line-height: 24px, $font-weight: bold);
+  position: relative;
+  padding-left: 60px;
+}
+
+.card-photo__count-likes::before {
+  position: absolute;
+  content: "";
+  background: url("../../img/icon-like.svg") no-repeat 0 0;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 20px;
+}

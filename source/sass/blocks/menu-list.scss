@@ -1,0 +1,13 @@
+.menu-list {
+  a {
+    @include main_font_index($color: $white, $line-height: 40px, $font-size: 18px, $font-weight: bold);
+  }
+}
+
+.menu-list__item {
+  background-color: #81b3d2;
+  min-height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

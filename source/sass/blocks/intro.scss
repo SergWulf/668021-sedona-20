@@ -1,0 +1,28 @@
+.intro {
+  position: relative;
+  overflow: hidden;
+  min-width: 320px;
+  min-height: 160px;
+  max-height: 160px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat -225px -230px;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 160px solid $white;
+  border-top-width: 25px;
+  border-top-color: transparent;
+  border-bottom-width: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.intro__image {
+  position: absolute;
+  width: 230px;
+  left: 45px;
+  top: 50px;
+}

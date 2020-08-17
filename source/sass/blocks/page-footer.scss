@@ -1,0 +1,29 @@
+.page-footer {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-footer__hashtag {
+  @include main_font_index($color:$black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  display: block;
+  width: 140px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.page-footer__social-list {
+  margin-bottom: 35px;
+}
+
+.page-footer__developed {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-footer__developed-header {
+  @include main_font_index($color:$black, $font-size: 14px, $line-height: 26px);
+  margin-right: 10px;
+}

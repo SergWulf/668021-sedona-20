@@ -1,0 +1,15 @@
+.main-nav {
+  min-height: 223px;
+  position: relative;
+}
+
+.main-nav__menu-close {
+  position: absolute;
+  top: 10px;
+  left: 280px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/icon-cross.svg") no-repeat 0 0;
+  outline: none;
+  border: none;
+}
