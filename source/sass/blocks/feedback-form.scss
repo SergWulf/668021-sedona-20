@@ -57,6 +57,7 @@
   }
 
   .feedback-form__input-text {
+    position: relative;
     width: 280px;
     height: 58px;
     border: none;
@@ -65,4 +66,58 @@
     background-color: #f2f2f2;
     padding: 20px;
   }
+
+  .feedback-form__icon-phone,
+  .feedback-form__icon-email {
+    display: block;
+    position: relative;
+  }
+
+  .feedback-form__icon-phone::after {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    top: -58px;
+    left: 222px;
+    z-index: 10;
+    background: #e6e6e6 url("../img/icon-phone.svg") no-repeat center center;
+  }
+
+  .feedback-form__icon-email::after {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    top: -58px;
+    left: 222px;
+    z-index: 10;
+    background: #e6e6e6 url("../img/icon-mail.svg") no-repeat center center;
+  }
+}
+
+.feedback-form__textarea {
+  border: 0;
+  outline: 0;
+  resize: none;
+  width: 279px;
+  height: 160px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+}
+
+.feedback-form__textarea::placeholder {
+  @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold, $text-transform: none);
+}
+
+.feedback-form__submit {
+  @include main_font_index($color:$white, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  border: none;
+  outline: none;
+  width: 280px;
+  height: 58px;
+  background-color: $blue;
+  margin-left: 20px;
 }
