@@ -13,3 +13,20 @@
   padding-bottom: 40px;
 }
 
+.video__controls-replay {
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-video-replay.svg") no-repeat 0 0;
+}
+
+.video__controls-subtitles {
+  width: 32px;
+  height: 20px;
+  background: url("../img/icon-video-subtitles.svg") no-repeat 0 0;
+}
+
+.video__controls-fullscreen {
+  width: 32px;
+  height: 20px;
+  background: url("../img/icon-video-fullscreen.svg") no-repeat 0 0;
+}

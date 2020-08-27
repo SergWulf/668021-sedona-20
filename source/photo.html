@@ -65,7 +65,15 @@
     <article class="video">
       <h2 class="video__header">Всё еще сомневаетесь?</h2>
       <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="video__presentation" poster="img/video-mobile@1x.jpg" width="320" height="267"  controls></video>
+      <div class="video__container">
+        <video class="video__presentation" poster="img/video-mobile@1x.jpg" width="320" height="267"></video>
+        <div class="video__controls">
+          <input class="video__controls-seek" type="range" value="0">
+          <button class="video__controls-replay" type="button" aria-label="replay"></button>
+          <button class="video__controls-subtitles" type="button" aria-invalid="subtitles"></button>
+          <button class="video__controls-fullscreen" type="button" aria-label="fullscreen" ></button>
+        </div>
+      </div>
     </article>
   </section>
 </main>
@@ -84,7 +92,7 @@
   </ul>
   <div class="page-footer__developed">
     <p class="page-footer__developed-header">Разработано</p>
-    <a class="page-footer__logo-link"href="https://htmlacademy.ru/intensive/adaptive">
+    <a class="page-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
       <img class="page-footer__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип">
     </a>
   </div>
