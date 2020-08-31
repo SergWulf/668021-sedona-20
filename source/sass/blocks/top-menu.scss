@@ -1,14 +1,18 @@
 .top-menu {
   position: relative;
   background-color: $white;
-  min-width: 320px;
   min-height: 56px;
   max-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    background-color: darkblue;
+  }
 }
 
 .top-menu__logo-link {
   display: flex;
   justify-content: center;
+  border: 1px solid red;
 }
 
 .top-menu__logo-image {
@@ -24,4 +28,8 @@
   background: url("../img/icon-menu.svg") no-repeat 0 0;
   outline: none;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
