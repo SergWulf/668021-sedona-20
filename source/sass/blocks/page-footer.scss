@@ -4,6 +4,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  border: 1px solid blueviolet;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 120px;
+    align-items: center;
+  }
 }
 
 .page-footer__hashtag {
@@ -12,13 +20,24 @@
   width: 140px;
   margin-top: 40px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+  border: 1px solid blueviolet;
 }
 
 .page-footer__social-list {
   margin-bottom: 35px;
+  border: 1px solid blueviolet;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+  }
 }
 
 .page-footer__developed {
+  border: 1px solid blueviolet;
   display: flex;
   justify-content: flex-start;
 }
@@ -26,4 +45,5 @@
 .page-footer__developed-header {
   @include main_font_index($color:$black, $font-size: 14px, $line-height: 26px);
   margin-right: 10px;
+  margin-top: 5px;
 }
