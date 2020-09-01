@@ -1,0 +1,49 @@
+.logo-item {
+  position: relative;
+  background-color: $white;
+}
+
+.logo-item__link {
+  display: block;
+  width: 102px;
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+  }
+}
+
+.logo-item__image {
+  position: absolute;
+  top: 0;
+  left: 104px;
+  z-index: 100;
+  width: 102px;
+  height: 84px;
+  background: url("../img/logo-sedona-mobile.svg") no-repeat 0 0;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    background: url("../img/logo-sedona-tablet.svg") no-repeat 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 97px;
+    background: url("../img/logo-sedona-desktop.svg") no-repeat 0 0;
+  }
+}
+
+.logo-item__menu-open {
+  position: absolute;
+  top: 10px;
+  left: 280px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/icon-menu.svg") no-repeat 0 0;
+  outline: none;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
