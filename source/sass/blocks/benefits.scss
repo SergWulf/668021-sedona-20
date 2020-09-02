@@ -3,6 +3,12 @@
   width: 260px;
   margin: 20px auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color:$black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+    width: 440px;
+    margin: 40px auto;
+  }
 }
 
 .benefits__description {
@@ -10,4 +16,9 @@
   width: 260px;
   margin: 20px auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 485px;
+    margin: 40px auto;
+  }
 }
