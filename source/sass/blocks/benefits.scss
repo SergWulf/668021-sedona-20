@@ -19,6 +19,11 @@
     width: 440px;
     margin: 40px auto;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 .benefits__description {
@@ -30,5 +35,9 @@
   @media (min-width: $tablet-width) {
     width: 485px;
     margin: 40px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
   }
 }

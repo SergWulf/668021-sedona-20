@@ -7,6 +7,10 @@
     width: 256px;
     height: 256px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .benefit__header,
@@ -65,6 +69,13 @@
       width: 512px;
       background: url("../img/main-city-tablet@1x.jpg") no-repeat 0 0;
     }
+
+    @media (min-width: $desktop-width) {
+      height: 256px;
+      max-height: 256px;
+      width: 800px;
+      background: url("../img/main-city-desktop@1x.jpg") no-repeat 0 0;
+    }
   }
 }
 
@@ -95,6 +106,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  .benefit__list-item {
+    position: relative;
+  }
 }
 
 .benefit__term {
@@ -107,24 +122,24 @@
   }
 }
 
-.benefit__term::before {
+.benefit__list-item::before {
   position: absolute;
   content: "";
   width: 40px;
   height: 40px;
-  left: -50px;
-  top: 0;
+  left: 50px;
+  top: 50px;
 }
 
-.benefit__term:nth-of-type(1)::before {
+.benefit__list-item:nth-of-type(1)::before {
   background: url("../img/icon-house.svg") no-repeat 0 0 / contain;
 }
 
-.benefit__term:nth-of-type(2)::before {
+.benefit__list-item:nth-of-type(2)::before {
   background: url("../img/icon-gift.svg") no-repeat 0 0 / contain;
 }
 
-.benefit__term:nth-of-type(3)::before {
+.benefit__list-item:nth-of-type(3)::before {
   background: url("../img/icon-burger.svg") no-repeat 0 0 / contain;
 }
 
@@ -161,6 +176,13 @@
       max-height: 256px;
       width: 512px;
       background: url("../img/main-bridge-tablet@1x.jpg") no-repeat 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 256px;
+      max-height: 256px;
+      width: 800px;
+      background: url("../img/main-bridge-desktop@1x.jpg") no-repeat 0 0;
     }
   }
 }
