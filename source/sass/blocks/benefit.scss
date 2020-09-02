@@ -3,12 +3,9 @@
 }
 
 .benefit__text-block {
-  background-color: #81b3d2;
-
   @media (min-width: $tablet-width) {
     width: 256px;
     height: 256px;
-    border: 1px solid blueviolet;
   }
 }
 
@@ -22,12 +19,20 @@
 .benefit--with-list,
 .benefit--with-image {
   .benefit__header {
-    @include main_font_index($color:$white, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+    @include main_font_index($color: $white, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+
+    @media (min-width: $tablet-width) {
+      @include main_font_index($color: $white, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+    }
   }
 
   .benefit__description,
   .benefit__number {
     @include main_font_index($color:$white, $font-size: 14px, $line-height: 21px);
+  }
+
+  .benefit__text-block {
+    background-color: #81b3d2;
   }
 }
 
@@ -35,12 +40,31 @@
   position: relative;
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .benefit__header {
     padding-top: 50px;
   }
 
   .benefit__description {
     padding-bottom: 40px;
+  }
+
+  .benefit__image {
+    height: 260px;
+    width: 320px;
+    max-height: 260px;
+    background: url("../img/main-city-mobile@1x.jpg") no-repeat 0 0;
+
+    @media (min-width: $tablet-width) {
+      height: 256px;
+      max-height: 256px;
+      width: 512px;
+      background: url("../img/main-city-tablet@1x.jpg") no-repeat 0 0;
+    }
   }
 }
 
@@ -67,12 +91,20 @@
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .benefit__term {
-  @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
   position: relative;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color: $black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  }
 }
 
 .benefit__term::before {
@@ -97,41 +129,53 @@
 }
 
 .benefit__definition {
-  @include main_font_index($color:$gray, $font-size: 14px, $line-height: 21px);
+  @include main_font_index($color: $gray, $font-size: 14px, $line-height: 21px);
   margin-left: 0;
   padding-bottom: 30px;
 }
 
 .benefit__link-image {
   display: block;
-  height: 260px;
-  max-height: 260px;
 }
 
 .benefit--with-image {
-  width: 100%;
-  height: 450px;
-  max-height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 
-  .benefit__link-image {
-    padding-top: 40px;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 
   .benefit__number {
     padding-bottom: 20px;
   }
+
+  .benefit__image {
+    height: 260px;
+    width: 320px;
+    max-height: 260px;
+    background: url("../img/main-bridge-mobile@1x.jpg") no-repeat 0 0;
+
+    @media (min-width: $tablet-width) {
+      height: 256px;
+      max-height: 256px;
+      width: 512px;
+      background: url("../img/main-bridge-tablet@1x.jpg") no-repeat 0 0;
+    }
+  }
 }
 
 .benefit__header {
-  @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color: $black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  }
 }
 
 .benefit__description,
 .benefit__number {
-  @include main_font_index($color:$gray, $font-size: 14px, $line-height: 21px);
+  @include main_font_index($color: $gray, $font-size: 14px, $line-height: 21px);
 }
 
 .benefit:nth-of-type(3),

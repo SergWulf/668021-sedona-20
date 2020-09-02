@@ -1,13 +1,17 @@
 .search-hotel__header {
-  @include main_font_index($color:$black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
   text-align: center;
   margin: 0;
   padding-top: 35px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
+  }
 }
 
 .search-hotel__description {
-  @include main_font_index($color:$gray, $font-size: 14px, $line-height: 24px);
+  @include main_font_index($color: $gray, $font-size: 14px, $line-height: 24px);
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
@@ -15,7 +19,7 @@
 }
 
 .search-hotel__find {
-  @include main_font_index($color:$white, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $white, $font-size: 21px, $line-height: 26px, $font-weight: bold);
   display: flex;
   width: 280px;
   height: 58px;
@@ -28,7 +32,22 @@
 
 .search-hotel__link-map {
   display: block;
-  margin-top: 50px;
+}
+
+.search-hotel__map {
   width: 320px;
   height: 350px;
+  background: url("../img/bg-map-mobile@1x.jpg") no-repeat 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 350px;
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 350px;
+    background: url("../img/bg-map-desktop@1x.jpg") no-repeat 0 0;
+  }
 }
