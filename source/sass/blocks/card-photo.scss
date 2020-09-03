@@ -9,6 +9,10 @@
     height: 280px;
     margin: 0 auto;
   }
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }
 
 .card-photo__header {
