@@ -3,6 +3,8 @@
 }
 
 .benefit__text-block {
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     width: 256px;
     height: 256px;
@@ -99,9 +101,11 @@
 .benefit__list {
   margin: 0;
   background-color: $white;
-  padding-top: 40px;
-  padding-left: 60px;
-  padding-right: 40px;
+  padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -109,13 +113,28 @@
 
   .benefit__list-item {
     position: relative;
+    padding-left: 69px;
+    padding-right: 41px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 256px;
+      height: 330px;
+      padding-top: 160px;
+      text-align: center;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 400px;
+    }
   }
 }
 
 .benefit__term {
   @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     @include main_font_index($color: $black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
@@ -127,8 +146,22 @@
   content: "";
   width: 40px;
   height: 40px;
-  left: 50px;
-  top: 50px;
+  left: 25px;
+  top: -15px;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 82px;
+    left: 87px;
+    top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 82px;
+    height: 82px;
+    left: 159px;
+    top: 50px;
+  }
 }
 
 .benefit__list-item:nth-of-type(1)::before {
@@ -143,10 +176,38 @@
   background: url("../img/icon-burger.svg") no-repeat 0 0 / contain;
 }
 
+.benefit__list-item:nth-of-type(1) {
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.benefit__list-item:nth-of-type(2) {
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    order: 3;
+  }
+}
+
+.benefit__list-item:nth-of-type(3) {
+  order: 3;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 .benefit__definition {
   @include main_font_index($color: $gray, $font-size: 14px, $line-height: 21px);
   margin-left: 0;
-  padding-bottom: 30px;
 }
 
 .benefit__link-image {
@@ -163,6 +224,12 @@
 
   .benefit__number {
     padding-bottom: 20px;
+  }
+
+  .benefit__text-block {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
   }
 
   .benefit__image {
@@ -203,17 +270,35 @@
 .benefit:nth-of-type(3),
 .benefit:nth-of-type(4),
 .benefit:nth-of-type(5) {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  .benefit__text-block {
+    padding-top: 45px;
+  }
+
   .benefit__description {
-    padding: 20px 35px;
+    padding: 0 35px;
   }
 
   .benefit__number {
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 17px;
   }
 }
 
-.benefit:nth-of-type(3) {
-  .benefit__header {
-    padding-top: 20px;
+.benefit:nth-of-type(3)::after,
+.benefit:nth-of-type(4)::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  left: 20px;
+  bottom: 1px;
+  background-color: #d6d6d6;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
