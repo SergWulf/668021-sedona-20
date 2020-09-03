@@ -4,16 +4,26 @@
 }
 
 .photo__header {
-  @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
   text-align: center;
   margin: 0;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
+  }
 }
 
 .photo__description {
-  @include main_font_index($color:$gray, $font-size: 14px, $line-height: 24px);
+  @include main_font_index($font-size: 14px, $line-height: 24px);
   text-align: center;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 440px;
+    margin: 0 auto;
+  }
 }
