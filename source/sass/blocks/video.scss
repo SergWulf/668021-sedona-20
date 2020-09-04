@@ -1,12 +1,20 @@
 .video {
   border-top: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }
 
 .video__header {
-  @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
+  }
 }
 
 .video__description {

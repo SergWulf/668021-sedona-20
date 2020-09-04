@@ -28,6 +28,12 @@
     width: 440px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
+    width: 650px;
+    margin: 0 auto;
+  }
 }
 
 .photo__description {
@@ -38,8 +44,13 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     width: 440px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
   }
 }
