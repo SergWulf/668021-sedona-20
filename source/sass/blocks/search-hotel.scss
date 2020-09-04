@@ -16,6 +16,12 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 auto;
+    width: 440px;
+  }
 }
 
 .search-hotel__find {
@@ -27,7 +33,11 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 50px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
 
 .search-hotel__link-map {
