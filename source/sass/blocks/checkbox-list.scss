@@ -1,5 +1,10 @@
 .checkbox-list {
   padding-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .checkbox-list__item {
@@ -7,10 +12,14 @@
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+  }
 }
 
 .checkbox-list__label {
-  @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold, $text-transform: none);
+  @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold, $text-transform: none);
   padding-left: 80px;
   position: relative;
 }
