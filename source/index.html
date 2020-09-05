@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона - главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,61 +22,79 @@
       <li class="menu-list__item">
         <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
       </li>
+      <li class="menu-list__item logo-item">
+        <a class="logo-item__link" href="#">
+          <div class="logo-item__image" aria-label="Логотип Седона"></div>
+        </a>
+        <button class="logo-item__menu-open" aria-label="Показать меню"></button>
+      </li>
     </ul>
     <button class="main-nav__menu-close" aria-label="Скрыть меню"></button>
   </nav>
-  <div class="top-menu">
-    <a class="top-menu__logo-link" href="#">
-      <img class="top-menu__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
-    </a>
-    <button class="top-menu__open" aria-label="Показать меню"></button>
-  </div>
 </header>
 <main class="page-content">
-  <div class="intro-index">
-    <a class="intro-index__link" href="#"><img class="intro-index__image" src="img/text-sedona-index.svg" width="280" height="360"  alt="Седона"></a>
+  <div class="intro intro--index">
+    <a class="intro__link" href="#">
+      <img class="intro__image" src="img/text-sedona-index.svg" width="280" height="360"  alt="Седона">
+    </a>
   </div>
   <section class="benefits">
     <h2 class="benefits__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p class="benefits__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     <div class="benefit benefit--with-list">
-      <h3 class="benefit__header">Настоящий городок</h3>
-      <p class="benefit__number">-№1-</p>
-      <p class="benefit__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <div class="benefit__text-block">
+        <h3 class="benefit__header">Настоящий городок</h3>
+        <p class="benefit__number">-№1-</p>
+        <p class="benefit__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
       <a class="benefit__link-image" href="#">
-        <img class="benefit__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона">
+        <div class="benefit__image" aria-label="Изображение Седоны"></div>
       </a>
-      <dl class="benefit__list">
-        <dt class="benefit__term">Жилье</dt>
-        <dd class="benefit__definition">Рекомендуем пожить в настоящем мотеле, всё как в кино!</dd>
-        <dt class="benefit__term">Сувениры</dt>
-        <dd class="benefit__definition">Не только китайского, но и местного производства!</dd>
-        <dt class="benefit__term">Еда</dt>
-        <dd class="benefit__definition">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</dd>
-      </dl>
+      <ul class="benefit__list">
+        <li class="benefit__list-item">
+          <p class="benefit__term">Жилье</p>
+          <p class="benefit__definition">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </li>
+        <li class="benefit__list-item">
+          <p class="benefit__term">Сувениры</p>
+          <p class="benefit__definition">Не только китайского, но и местного производства!</p>
+        </li>
+        <li class="benefit__list-item">
+          <p class="benefit__term">Еда</p>
+          <p class="benefit__definition">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+      </ul>
     </div>
     <div class="benefit benefit--with-image">
-      <h3 class="benefit__header">Там есть мост дьявола</h3>
-      <p class="benefit__number">-№2-</p>
-      <p class="benefit__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      <div class="benefit__text-block">
+        <h3 class="benefit__header">Там есть мост дьявола</h3>
+        <p class="benefit__number">-№2-</p>
+        <p class="benefit__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      </div>
       <a class="benefit__link-image">
-        <img class="benefit__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола">
+        <div class="benefit__image" aria-label="Мост Дьявола"></div>
       </a>
     </div>
     <div class="benefit">
-      <h3 class="benefit__header">Небольшая площадь</h3>
-      <p class="benefit__number">-№3-</p>
-      <p class="benefit__description">Все интересные места находятся очень близко</p>
+      <div class="benefit__text-block">
+        <h3 class="benefit__header">Небольшая площадь</h3>
+        <p class="benefit__number">-№3-</p>
+        <p class="benefit__description">Все интересные места находятся очень близко</p>
+      </div>
     </div>
     <div class="benefit">
-      <h3 class="benefit__header">Красивая дорога</h3>
-      <p class="benefit__number">-№4-</p>
-      <p class="benefit__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+      <div class="benefit__text-block">
+        <h3 class="benefit__header">Красивая дорога</h3>
+        <p class="benefit__number">-№4-</p>
+        <p class="benefit__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+      </div>
     </div>
     <div class="benefit">
-      <h3 class="benefit__header">Мало туристов</h3>
-      <p class="benefit__number">-№5-</p>
-      <p class="benefit__description">Большинство едет в Гранд Каньон и толпится там</p>
+      <div class="benefit__text-block">
+        <h3 class="benefit__header">Мало туристов</h3>
+        <p class="benefit__number">-№5-</p>
+        <p class="benefit__description">Большинство едет в Гранд Каньон и толпится там</p>
+      </div>
     </div>
   </section>
   <section class="search-hotel">
@@ -83,7 +102,7 @@
     <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <a class="search-hotel__find" href="#">Найти гостиницу</a>
     <a class="search-hotel__link-map">
-      <img class="search-hotel__map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта Седоны">
+      <div class="search-hotel__map" aria-label="Карта Седоны"></div>
     </a>
   </section>
 </main>

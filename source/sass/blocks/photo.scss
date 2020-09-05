@@ -1,19 +1,56 @@
 .photo {
   background: $white;
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .photo__header {
-  @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
   text-align: center;
   margin: 0;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
+    width: 650px;
+    margin: 0 auto;
+  }
 }
 
 .photo__description {
-  @include main_font_index($color:$gray, $font-size: 14px, $line-height: 24px);
+  @include main_font_index($font-size: 14px, $line-height: 24px);
   text-align: center;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+  }
 }

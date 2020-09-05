@@ -2,12 +2,48 @@
   a {
     @include main_font_index($color: $white, $line-height: 40px, $font-size: 18px, $font-weight: bold);
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      @include main_font_index($color: $black, $line-height: 26px, $font-size: 14px, $font-weight: bold);
+    }
+  }
 }
 
 .menu-list__item {
   background-color: #81b3d2;
   min-height: 55px;
+  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+
+.menu-list__item:nth-of-type(1) {
+  order: 1;
+}
+
+.menu-list__item:nth-of-type(2) {
+  order: 2;
+}
+
+.menu-list__item:nth-of-type(3) {
+  order: 4;
+}
+
+.menu-list__item:nth-of-type(4) {
+  order: 5;
+}
+
+.menu-list__item:nth-of-type(5) {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }

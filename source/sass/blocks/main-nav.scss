@@ -1,5 +1,4 @@
 .main-nav {
-  min-height: 223px;
   position: relative;
 }
 
@@ -12,4 +11,8 @@
   background: url("../img/icon-cross.svg") no-repeat 0 0;
   outline: none;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

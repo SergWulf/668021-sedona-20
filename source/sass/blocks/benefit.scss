@@ -2,6 +2,19 @@
   background-color: #eeeeee;
 }
 
+.benefit__text-block {
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
 .benefit__header,
 .benefit__number,
 .benefit__description {
@@ -12,18 +25,31 @@
 .benefit--with-list,
 .benefit--with-image {
   .benefit__header {
-    @include main_font_index($color:$white, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+    @include main_font_index($color: $white, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+
+    @media (min-width: $tablet-width) {
+      @include main_font_index($color: $white, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+    }
   }
 
   .benefit__description,
   .benefit__number {
     @include main_font_index($color:$white, $font-size: 14px, $line-height: 21px);
   }
-  background-color: #81b3d2;
+
+  .benefit__text-block {
+    background-color: #81b3d2;
+  }
 }
 
 .benefit--with-list {
   position: relative;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   .benefit__header {
     padding-top: 50px;
@@ -31,6 +57,27 @@
 
   .benefit__description {
     padding-bottom: 40px;
+  }
+
+  .benefit__image {
+    height: 260px;
+    width: 320px;
+    max-height: 260px;
+    background: url("../img/main-city-mobile@1x.jpg") no-repeat 0 0;
+
+    @media (min-width: $tablet-width) {
+      height: 256px;
+      max-height: 256px;
+      width: 512px;
+      background: url("../img/main-city-tablet@1x.jpg") no-repeat 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 256px;
+      max-height: 256px;
+      width: 800px;
+      background: url("../img/main-city-desktop@1x.jpg") no-repeat 0 0;
+    }
   }
 }
 
@@ -45,94 +92,210 @@
   border-bottom-width: 0;
   left: 0;
   top: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .benefit__list {
   margin: 0;
   background-color: $white;
-  padding-top: 40px;
-  padding-left: 60px;
-  padding-right: 40px;
+  padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    display: flex;
+  }
+
+  .benefit__list-item {
+    position: relative;
+    padding-left: 69px;
+    padding-right: 41px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 256px;
+      height: 330px;
+      padding-top: 160px;
+      text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+    }
+  }
 }
 
 .benefit__term {
-  @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color: $black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  }
 }
 
-.benefit__term::before {
+.benefit__list-item::before {
   position: absolute;
   content: "";
   width: 40px;
   height: 40px;
-  left: -50px;
-  top: 0;
+  left: 25px;
+  top: -15px;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 82px;
+    left: 87px;
+    top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 82px;
+    height: 82px;
+    left: 159px;
+    top: 50px;
+  }
 }
 
-.benefit__term:nth-of-type(1)::before {
+.benefit__list-item:nth-of-type(1)::before {
   background: url("../img/icon-house.svg") no-repeat 0 0 / contain;
 }
 
-.benefit__term:nth-of-type(2)::before {
+.benefit__list-item:nth-of-type(2)::before {
   background: url("../img/icon-gift.svg") no-repeat 0 0 / contain;
 }
 
-.benefit__term:nth-of-type(3)::before {
+.benefit__list-item:nth-of-type(3)::before {
   background: url("../img/icon-burger.svg") no-repeat 0 0 / contain;
 }
 
+.benefit__list-item:nth-of-type(1) {
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.benefit__list-item:nth-of-type(2) {
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    order: 3;
+  }
+}
+
+.benefit__list-item:nth-of-type(3) {
+  order: 3;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 .benefit__definition {
-  @include main_font_index($color:$gray, $font-size: 14px, $line-height: 21px);
+  @include main_font_index($color: $gray, $font-size: 14px, $line-height: 21px);
   margin-left: 0;
-  padding-bottom: 30px;
 }
 
 .benefit__link-image {
   display: block;
-  height: 260px;
-  max-height: 260px;
 }
 
 .benefit--with-image {
-  height: 450px;
-  max-height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 
-  .benefit__link-image {
-    padding-top: 40px;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 
   .benefit__number {
     padding-bottom: 20px;
   }
+
+  .benefit__text-block {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  .benefit__image {
+    height: 260px;
+    width: 320px;
+    max-height: 260px;
+    background: url("../img/main-bridge-mobile@1x.jpg") no-repeat 0 0;
+
+    @media (min-width: $tablet-width) {
+      height: 256px;
+      max-height: 256px;
+      width: 512px;
+      background: url("../img/main-bridge-tablet@1x.jpg") no-repeat 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 256px;
+      max-height: 256px;
+      width: 800px;
+      background: url("../img/main-bridge-desktop@1x.jpg") no-repeat 0 0;
+    }
+  }
 }
 
 .benefit__header {
-  @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color: $black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  }
 }
 
 .benefit__description,
 .benefit__number {
-  @include main_font_index($color:$gray, $font-size: 14px, $line-height: 21px);
+  @include main_font_index($color: $gray, $font-size: 14px, $line-height: 21px);
 }
 
 .benefit:nth-of-type(3),
 .benefit:nth-of-type(4),
 .benefit:nth-of-type(5) {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  .benefit__text-block {
+    padding-top: 45px;
+  }
+
   .benefit__description {
-    padding: 20px 35px;
+    padding: 0 35px;
   }
 
   .benefit__number {
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 17px;
   }
 }
 
-.benefit:nth-of-type(3) {
-  .benefit__header {
-    padding-top: 20px;
+.benefit:nth-of-type(3)::after,
+.benefit:nth-of-type(4)::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  left: 20px;
+  bottom: 1px;
+  background-color: #d6d6d6;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

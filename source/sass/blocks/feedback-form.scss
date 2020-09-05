@@ -1,3 +1,46 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.feedback-form__fieldset:nth-of-type(3) {
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 440px;
+  }
+}
+
+.feedback-form__fieldset:nth-of-type(4) {
+  @media (min-width: $tablet-width) {
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .feedback-form__fieldset-title {
+    @media (min-width: $tablet-width) {
+      left: 100px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 200px;
+    }
+  }
+}
+
 .feedback-form__fieldset {
   position: relative;
   border: 0;
@@ -20,8 +63,16 @@
 }
 
 .feedback-form__fieldset:nth-of-type(1) {
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 440px;
+  }
+
   .feedback-form__input-text::placeholder {
-    @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold, $text-transform: none);
+    @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold, $text-transform: none);
   }
 
   .feedback-form__input-text {
@@ -36,14 +87,38 @@
 
   .feedback-form__input-text:nth-of-type(1) {
     width: 230px;
+
+    @media (min-width: $tablet-width) {
+      width: 216px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 350px;
+    }
   }
 
   .feedback-form__input-text:nth-of-type(2) {
     width: 192px;
+
+    @media (min-width: $tablet-width) {
+      width: 178px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 312px;
+    }
   }
 
   .feedback-form__input-text:nth-of-type(3) {
     width: 194px;
+
+    @media (min-width: $tablet-width) {
+      width: 180px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 314px;
+    }
   }
 }
 
@@ -52,8 +127,31 @@
 }
 
 .feedback-form__fieldset:nth-of-type(2) {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 960px;
+    height: 206px;
+  }
+
+  .feedback-form__fieldset-title {
+    @media (min-width: $tablet-width) {
+      left: 200px;
+    }
+  }
+
+  .feedback-form__label-input-text {
+    @media (min-width: $desktop-width) {
+      width: 170px;
+    }
+  }
+
   .feedback-form__input-text::placeholder {
-    @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold, $text-transform: none);
+    @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold, $text-transform: none);
   }
 
   .feedback-form__input-text {
@@ -65,12 +163,20 @@
     box-sizing: border-box;
     background-color: #f2f2f2;
     padding: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 648px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 257px;
+    }
   }
 
   .feedback-form__icon-phone,
   .feedback-form__icon-email {
-    display: block;
     position: relative;
+    display: block;
   }
 
   .feedback-form__icon-phone::after {
@@ -82,6 +188,15 @@
     left: 222px;
     z-index: 10;
     background: #e6e6e6 url("../img/icon-phone.svg") no-repeat center center;
+
+    @media (min-width: $tablet-width) {
+      left: 590px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: -58px;
+    }
   }
 
   .feedback-form__icon-email::after {
@@ -93,6 +208,23 @@
     left: 222px;
     z-index: 10;
     background: #e6e6e6 url("../img/icon-mail.svg") no-repeat center center;
+
+    @media (min-width: $tablet-width) {
+      left: 590px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: -58px;
+    }
+  }
+}
+
+.feedback-form__fieldset:nth-of-type(5) {
+  .feedback-form__fieldset-title {
+    @media (min-width: $tablet-width) {
+      left: 200px;
+    }
   }
 }
 
@@ -106,6 +238,14 @@
   box-sizing: border-box;
   padding: 15px 20px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
 
 .feedback-form__textarea::placeholder {

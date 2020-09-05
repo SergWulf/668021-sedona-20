@@ -1,42 +1,192 @@
 .card-photo {
+  position: relative;
   padding-bottom: 20px;
   padding-top: 20px;
   border-top: 1px solid #e5e5e5;
 
   a {
     display: block;
-    width: 280px;
-    height: 280px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding: 0;
+  }
+}
+
+.card-photo__image {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+}
+
+.card-photo:nth-of-type(1) {
+  .card-photo__image {
+    background: url("../img/photo-sunset-mobile@1x.jpg") no-repeat 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      height: 400px;
+      background: url("../img/photo-sunset-tablet@1x.jpg") no-repeat 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      height: 400px;
+      background: url("../img/photo-sunset-desktop@1x.jpg") no-repeat 0 0;
+    }
+  }
+}
+
+.card-photo:nth-of-type(2) {
+  .card-photo__image {
+    background: url("../img/photo-cactus-mobile@1x.jpg") no-repeat 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      height: 267px;
+      background: url("../img/photo-cactus-tablet@1x.jpg") no-repeat 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      height: 267px;
+      background: url("../img/photo-cactus-desktop@1x.jpg") no-repeat 0 0;
+    }
+  }
+}
+
+.card-photo:nth-of-type(3) {
+  .card-photo__image {
+    background: url("../img/photo-roads-mobile@1x.jpg") no-repeat 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      height: 267px;
+      background: url("../img/photo-roads-tablet@1x.jpg") no-repeat 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      height: 267px;
+      background: url("../img/photo-roads-desktop@1x.jpg") no-repeat 0 0;
+    }
+  }
+}
+
+.card-photo:nth-of-type(4) {
+  .card-photo__image {
+    background: url("../img/photo-bridge-mobile@1x.jpg") no-repeat 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      height: 267px;
+      background: url("../img/photo-bridge-tablet@1x.jpg") no-repeat 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      height: 267px;
+      background: url("../img/photo-bridge-desktop@1x.jpg") no-repeat 0 0;
+    }
+  }
+}
+
+.card-photo__text {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.card-photo__description {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
   }
 }
 
 .card-photo__header {
-  @include main_font_index($color:$black, $font-size: 14px, $line-height: 24px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 14px, $line-height: 24px, $font-weight: bold);
   margin: 0;
-  padding-top: 15px;
   padding-bottom: 0;
   padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .card-photo__author {
-  @include main_font_index($color:$gray, $font-size: 14px, $line-height: 24px, $text-transform: normal);
+  @include main_font_index($font-size: 14px, $line-height: 24px, $text-transform: normal);
   padding-bottom: 10px;
   padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .card-photo__count-likes {
-  @include main_font_index($color:$black, $font-size: 14px, $line-height: 24px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 14px, $line-height: 24px, $font-weight: bold);
   position: relative;
   padding-left: 60px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 20px;
+    width: 50px;
+    height: 25px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .card-photo__count-likes::before {
   position: absolute;
   content: "";
-  background: url("../../img/icon-like.svg") no-repeat 0 0;
+  background: url("../img/icon-like.svg") no-repeat 0 0;
   width: 25px;
   height: 25px;
   top: 0;
   left: 20px;
+
+  @media (min-width: $tablet-width) {
+    left: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+    background-image: none;
+    mask-image: url("../img/icon-like.svg");
+    mask-repeat: no-repeat;
+    mask-position: 0 0;
+  }
 }

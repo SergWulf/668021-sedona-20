@@ -1,8 +1,29 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .benefits__header {
   @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
   width: 260px;
   margin: 20px auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color:$black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+    width: 440px;
+    margin: 40px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 .benefits__description {
@@ -10,4 +31,13 @@
   width: 260px;
   margin: 20px auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 485px;
+    margin: 40px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+  }
 }
