@@ -2,7 +2,7 @@
   @include main_font_index($color: $black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
   text-align: center;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 33px;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -15,7 +15,7 @@
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -33,7 +33,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 15px auto 49px;
 
   @media (min-width: $tablet-width) {
     width: 458px;
