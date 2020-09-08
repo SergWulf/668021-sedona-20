@@ -1,12 +1,12 @@
 .radio-list__label {
   @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold, $text-transform: none);
-  padding-left: 80px;
+  padding-left: 79px;
   position: relative;
 }
 
 .radio-list__item {
   height: 56px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   display: flex;
   align-items: center;
 }
