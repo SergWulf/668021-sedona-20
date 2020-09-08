@@ -150,8 +150,6 @@
   content: "";
   width: 40px;
   height: 40px;
-  left: 25px;
-  top: -15px;
 
   @media (min-width: $tablet-width) {
     width: 82px;
@@ -169,14 +167,20 @@
 }
 
 .benefit__list-item:nth-of-type(1)::before {
+  left: 19px;
+  top: -11px;
   background: url("../img/icon-house.svg") no-repeat 0 0 / contain;
 }
 
 .benefit__list-item:nth-of-type(2)::before {
+  left: 23px;
+  top: -13px;
   background: url("../img/icon-gift.svg") no-repeat 0 0 / contain;
 }
 
 .benefit__list-item:nth-of-type(3)::before {
+  left: 19px;
+  top: -7px;
   background: url("../img/icon-burger.svg") no-repeat 0 0 / contain;
 }
 

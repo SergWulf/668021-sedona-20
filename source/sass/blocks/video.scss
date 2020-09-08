@@ -10,8 +10,8 @@
 .video__header {
   @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 32px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
@@ -21,9 +21,9 @@
 .video__description {
   @include main_font_index($font-size: 14px, $line-height: 24px);
   text-align: center;
-  padding-left: 40px;
+  padding-left: 30px;
   padding-right: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     width: 450px;

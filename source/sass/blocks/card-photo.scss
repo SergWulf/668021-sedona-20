@@ -1,7 +1,7 @@
 .card-photo {
   position: relative;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 16px;
+  padding-top: 22px;
   border-top: 1px solid #e5e5e5;
 
   a {
@@ -123,6 +123,7 @@
 .card-photo__description {
   display: flex;
   flex-direction: column;
+  padding-top: 11px;
 
   @media (min-width: $tablet-width) {
     height: 50px;
@@ -142,6 +143,7 @@
 
 .card-photo__author {
   @include main_font_index($font-size: 14px, $line-height: 24px, $text-transform: normal);
+  padding-top: 1px;
   padding-bottom: 10px;
   padding-left: 20px;
 
@@ -153,7 +155,8 @@
 .card-photo__count-likes {
   @include main_font_index($color: $black, $font-size: 14px, $line-height: 24px, $font-weight: bold);
   position: relative;
-  padding-left: 60px;
+  padding-top: 2px;
+  padding-left: 58px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
