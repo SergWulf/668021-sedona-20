@@ -50,8 +50,10 @@
   top: 50px;
 
   @media (min-width: $tablet-width) {
-    width: 468px;
-    left: 150px;
+    width: 457px;
+    height: 78px;
+    top: 95px;
+    left: 157px;
   }
 
   @media (min-width: $desktop-width) {
