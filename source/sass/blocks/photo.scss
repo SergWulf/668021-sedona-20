@@ -27,7 +27,9 @@
   @media (min-width: $tablet-width) {
     @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
     width: 440px;
-    margin: 0 auto;
+    margin: 34px auto 34px;
+    padding: 0;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,10 +47,9 @@
   padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     width: 440px;
-    margin: 0 auto;
+    margin: 0 auto 81px;
   }
 
   @media (min-width: $desktop-width) {

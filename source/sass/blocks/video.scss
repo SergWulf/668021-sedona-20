@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     border-top: none;
+    padding-bottom: 3px;
   }
 }
 
@@ -15,6 +16,8 @@
 
   @media (min-width: $tablet-width) {
     @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
+    margin-top: 57px;
+    margin-bottom: 33px;
   }
 }
 
@@ -29,6 +32,7 @@
     width: 450px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 80px;
     margin: 0 auto;
   }
 }
@@ -155,7 +159,8 @@
     mask-image: url("../img/icon-video-replay.svg");
     mask-repeat: no-repeat;
     mask-position: 0 0;
-    margin-right: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
   }
 }
 
@@ -172,7 +177,7 @@
     mask-image: url("../img/icon-video-subtitles.svg");
     mask-repeat: no-repeat;
     mask-position: 0 0;
-    margin-left: 70px;
+    margin-left: 35px;
   }
 
   @media (min-width: $desktop-width) {

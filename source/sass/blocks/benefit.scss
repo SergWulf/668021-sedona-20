@@ -388,10 +388,18 @@
 .benefit:nth-of-type(3),
 .benefit:nth-of-type(4) {
   height: 168px;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
 }
 
 .benefit:nth-of-type(5) {
   height: 167px;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
 }
 
 .benefit:nth-of-type(3)::after,
