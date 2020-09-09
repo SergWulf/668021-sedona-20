@@ -7,10 +7,13 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 120px;
+    max-height: 120px;
     align-items: center;
+    padding: 36px 60px;
   }
 }
 
@@ -28,7 +31,8 @@
 
 .page-footer__social-list {
   @media (min-width: $tablet-width) {
-    margin-top: 35px;
+    margin-top: 36px;
+    margin-left: -13px;
   }
 }
 

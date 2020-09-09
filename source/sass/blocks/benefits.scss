@@ -19,7 +19,7 @@
   @media (min-width: $tablet-width) {
     @include main_font_index($color:$black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
     width: 440px;
-    margin: 40px auto;
+    margin: 44px auto 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +36,7 @@
 
   @media (min-width: $tablet-width) {
     width: 485px;
-    margin: 40px auto;
+    margin: 31px auto 53px;
   }
 
   @media (min-width: $desktop-width) {

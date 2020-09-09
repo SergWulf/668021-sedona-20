@@ -53,15 +53,34 @@
   .benefit__header {
     padding-top: 54px;
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 40px;
+      padding-top: 0;
+      padding-left: 65px;
+      padding-right: 65px;
+      text-align: center;
+    }
   }
 
   .benefit__number {
     padding-top: 11px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 13px;
+    }
   }
 
   .benefit__description {
     padding-top: 18px;
     padding-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 23px;
+    }
   }
 
   .benefit__image {
@@ -121,7 +140,7 @@
     @media (min-width: $tablet-width) {
       width: 256px;
       height: 330px;
-      padding-top: 160px;
+      padding-top: 158px;
       text-align: center;
     }
 
@@ -142,6 +161,7 @@
 
   @media (min-width: $tablet-width) {
     @include main_font_index($color: $black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+    padding-bottom: 23px;
   }
 }
 
@@ -150,13 +170,6 @@
   content: "";
   width: 40px;
   height: 40px;
-
-  @media (min-width: $tablet-width) {
-    width: 82px;
-    height: 82px;
-    left: 87px;
-    top: 50px;
-  }
 
   @media (min-width: $desktop-width) {
     width: 82px;
@@ -170,18 +183,39 @@
   left: 19px;
   top: -11px;
   background: url("../img/icon-house.svg") no-repeat 0 0 / contain;
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+    left: 90px;
+    top: 60px;
+  }
 }
 
 .benefit__list-item:nth-of-type(2)::before {
   left: 23px;
   top: -13px;
   background: url("../img/icon-gift.svg") no-repeat 0 0 / contain;
+
+  @media (min-width: $tablet-width) {
+    width: 64px;
+    height: 75px;
+    left: 95px;
+    top: 57px;
+  }
 }
 
 .benefit__list-item:nth-of-type(3)::before {
   left: 19px;
   top: -7px;
   background: url("../img/icon-burger.svg") no-repeat 0 0 / contain;
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 68px;
+    left: 89px;
+    top: 63px;
+  }
 }
 
 .benefit__list-item:nth-of-type(1) {
@@ -235,14 +269,28 @@
     margin-bottom: 0;
     padding-top: 39px;
     padding-bottom: 11px;
+
+    @media (min-width: $tablet-width) {
+      text-align: center;
+      margin-top: 43px;
+      padding: 0 53px 13px;
+    }
   }
 
   .benefit__number {
     padding-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 23px;
+    }
   }
 
   .benefit__description {
     padding-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 51px 0;
+    }
   }
 
   .benefit__text-block {
@@ -294,17 +342,46 @@
   padding-bottom: 26px;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    min-width: 256px;
+    min-height: 256px;
+  }
+
   .benefit__header {
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 42px;
+      padding: 0 68px 0;
+    }
   }
 
   .benefit__number {
     padding-top: 11px;
     padding-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 13px;
+      padding-bottom: 23px;
+    }
   }
 
   .benefit__description {
     padding: 0 35px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 39px;
+    }
+  }
+}
+
+.benefit:nth-of-type(4) {
+  .benefit__description {
+    @media (min-width: $tablet-width) {
+      padding-left: 57px;
+      padding-right: 62px;
+    }
   }
 }
 
