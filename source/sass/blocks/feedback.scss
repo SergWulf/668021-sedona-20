@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
-    margin-top: 62px;
+    margin-top: 65px;
     margin-bottom: 33px;
   }
 }
@@ -34,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
     width: 440px;
-    margin: 0 auto 85px;
+    margin: 0 auto 84px;
     padding: 0;
   }
 }
