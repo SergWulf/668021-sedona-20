@@ -15,6 +15,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 81px;
   }
 }
 
@@ -35,7 +36,7 @@
   @media (min-width: $desktop-width) {
     @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
     width: 650px;
-    margin: 0 auto;
+    margin: 77px auto 33px;
   }
 }
 
@@ -53,6 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 650px;
+    padding: 0 100px 0;
+    margin: 0 auto 79px;
   }
 }
