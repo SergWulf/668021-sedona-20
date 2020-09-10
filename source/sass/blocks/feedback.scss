@@ -13,10 +13,16 @@
 }
 
 .feedback__header {
-  @include main_font_index($color:$black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold);
   text-align: center;
   margin-top: 36px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color: $black, $font-size: 30px, $line-height: 26px, $font-weight: bold);
+    margin-top: 62px;
+    margin-bottom: 33px;
+  }
 }
 
 .feedback__description {
@@ -25,4 +31,10 @@
   padding-left: 22px;
   padding-right: 20px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    margin: 0 auto 85px;
+    padding: 0;
+  }
 }
