@@ -61,6 +61,12 @@
       padding-right: 65px;
       text-align: center;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 48px;
+      padding-left: 140px;
+      padding-right: 140px;
+    }
   }
 
   .benefit__number {
@@ -81,6 +87,11 @@
       padding-right: 30px;
       padding-top: 23px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 67px;
+      padding-right: 67px;
+    }
   }
 
   .benefit__image {
@@ -100,7 +111,7 @@
       height: 256px;
       max-height: 256px;
       width: 800px;
-      background: url("../img/main-city-desktop@1x.jpg") no-repeat 0 0;
+      background: url("../img/main-city-desktop@1x.jpg") no-repeat 0 -68px;
     }
   }
 }
@@ -190,6 +201,10 @@
     left: 90px;
     top: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 162px;
+  }
 }
 
 .benefit__list-item:nth-of-type(2)::before {
@@ -202,6 +217,10 @@
     height: 75px;
     left: 95px;
     top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 167px;
   }
 }
 
@@ -216,6 +235,10 @@
     left: 89px;
     top: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 162px;
+  }
 }
 
 .benefit__list-item:nth-of-type(1) {
@@ -224,6 +247,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
@@ -234,6 +262,19 @@
     padding-left: 30px;
     padding-right: 30px;
     order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+
+  span {
+    @media (min-width: $desktop-width) {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 
@@ -275,6 +316,12 @@
       margin-top: 43px;
       padding: 0 53px 13px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 52px;
+      padding-left: 125px;
+      padding-right: 125px;
+    }
   }
 
   .benefit__number {
@@ -290,6 +337,11 @@
 
     @media (min-width: $tablet-width) {
       padding: 0 51px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 89px;
+      padding-right: 91px;
     }
   }
 
@@ -316,7 +368,7 @@
       height: 256px;
       max-height: 256px;
       width: 800px;
-      background: url("../img/main-bridge-desktop@1x.jpg") no-repeat 0 0;
+      background: url("../img/main-bridge-desktop@1x.jpg") no-repeat 0 -15px;
     }
   }
 }
@@ -355,6 +407,12 @@
       margin-top: 42px;
       padding: 0 68px 0;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 43px;
+      padding-left: 140px;
+      padding-right: 140px;
+    }
   }
 
   .benefit__number {
@@ -381,6 +439,11 @@
     @media (min-width: $tablet-width) {
       padding-left: 57px;
       padding-right: 62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 62px;
+      padding-right: 67px;
     }
   }
 }

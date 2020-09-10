@@ -25,6 +25,10 @@
     width: 440px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+
   span {
     @media (min-width: $tablet-width) {
       display: block;
@@ -46,6 +50,10 @@
   @media (min-width: $tablet-width) {
     width: 458px;
     margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
   }
 }
 
