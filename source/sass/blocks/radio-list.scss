@@ -12,6 +12,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 79px;
+  }
 }
 
 .radio-list__item {
@@ -34,6 +38,11 @@
   background-color: #f2f2f2;
   top: -15px;
   left: 0;
+
+  @media (min-width: $desktop-width) {
+    top: -18px;
+    left: 4px;
+  }
 }
 
 
@@ -47,6 +56,11 @@
   background-color: $gray;
   top: 3px;
   left: 17px;
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 21px;
+  }
 }
 
 .radio-list__input:checked ~ .radio-list__label::after {
