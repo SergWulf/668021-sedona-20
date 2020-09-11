@@ -4,40 +4,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-  }
-}
-
-.feedback-form__fieldset:nth-of-type(3) {
-  @media (min-width: $tablet-width) {
-    width: 280px;
-    order: -1;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 440px;
-  }
-}
-
-.feedback-form__fieldset:nth-of-type(4) {
-  @media (min-width: $tablet-width) {
-    width: 480px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 960px;
-    margin: 0 auto;
-  }
-
-  .feedback-form__fieldset-title {
-    @media (min-width: $tablet-width) {
-      left: 100px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 200px;
-    }
   }
 }
 
@@ -49,6 +17,11 @@
   padding-top: 60px;
   padding-left: 20px;
   padding-right: 20px;
+  //outline: 1px solid yellow;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }
 
 .feedback-form__fieldset-title {
@@ -60,19 +33,49 @@
   margin: 0;
   padding: 0;
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    @include main_font_index($color:$black, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  }
 }
 
 .feedback-form__fieldset:nth-of-type(1) {
+  padding-top: 80px;
+  padding-bottom: 5px;
+
+
   @media (min-width: $tablet-width) {
-    width: 280px;
+    text-align: right;
+    padding-right: 0;
+    box-sizing: border-box;
+    width: 320px;
+    height: 300px;
   }
 
   @media (min-width: $desktop-width) {
     width: 440px;
   }
 
+  .feedback-form__fieldset-title {
+    @media (min-width: $tablet-width) {
+      text-align: start;
+      top: 0;
+      left: 55px;
+      padding: 0;
+      width: 280px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 40px;
+    }
+  }
+
   .feedback-form__input-text::placeholder {
     @include main_font_index($color: $black, $font-size: 18px, $line-height: 26px, $font-weight: bold, $text-transform: none);
+  }
+
+  .feedback-form__label-input-text {
+    //display: inline-block;
   }
 
   .feedback-form__input-text {
@@ -81,8 +84,10 @@
     outline: none;
     box-sizing: border-box;
     background-color: #f2f2f2;
+    margin-left: 9px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding-top: 6px;
+    padding-left: 22px;
   }
 
   .feedback-form__input-text:nth-of-type(1) {
@@ -111,6 +116,7 @@
 
   .feedback-form__input-text:nth-of-type(3) {
     width: 194px;
+    margin-left: 11px;
 
     @media (min-width: $tablet-width) {
       width: 180px;
@@ -127,26 +133,79 @@
 }
 
 .feedback-form__fieldset:nth-of-type(2) {
+  padding-top: 62px;
+  padding-bottom: 16px;
+
   @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 0;
+    padding-top: 113px;
     width: 648px;
     height: 206px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    box-sizing: border-box;
+    padding-top: 162px;
     width: 960px;
-    height: 206px;
+    height: 250px;
   }
 
   .feedback-form__fieldset-title {
     @media (min-width: $tablet-width) {
-      left: 200px;
+      top: 68px;
+      left: 165px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 65px;
+      left: 319px;
     }
   }
 
   .feedback-form__label-input-text {
-    @media (min-width: $desktop-width) {
+    display: inline-block;
+    padding-left: 22px;
+    padding-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 8px;
+      display: block;
       width: 170px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      display: inline-block;
+    }
+
+    span:nth-of-type(1) {
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+
+    span:nth-of-type(2) {
+      display: none;
+
+      @media (min-width: $desktop-width) {
+        display: inline;
+      }
+    }
+  }
+
+  .feedback-form__label-input-text:nth-of-type(1) {
+    @media (min-width: $desktop-width) {
+      width: 80px;
+    }
+  }
+
+  .feedback-form__label-input-text:nth-of-type(2) {
+    padding-bottom: 6px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 130px;
+      width: 162px;
     }
   }
 
@@ -160,11 +219,15 @@
     height: 58px;
     border: none;
     outline: none;
+    display: inline-block;
     box-sizing: border-box;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding-top: 6px;
+    padding-left: 22px;
+    margin-bottom: 12px;
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 24px;
       width: 648px;
     }
 
@@ -177,6 +240,10 @@
   .feedback-form__icon-email {
     position: relative;
     display: block;
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
   }
 
   .feedback-form__icon-phone::after {
@@ -184,18 +251,19 @@
     content: "";
     width: 58px;
     height: 58px;
-    top: -58px;
+    top: -70px;
     left: 222px;
     z-index: 10;
     background: #e6e6e6 url("../img/icon-phone.svg") no-repeat center center;
 
     @media (min-width: $tablet-width) {
+      top: -82px;
       left: 590px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 0;
-      left: -58px;
+      top: -36px;
+      left: -4px;
     }
   }
 
@@ -204,26 +272,105 @@
     content: "";
     width: 58px;
     height: 58px;
-    top: -58px;
+    top: -70px;
     left: 222px;
     z-index: 10;
     background: #e6e6e6 url("../img/icon-mail.svg") no-repeat center center;
 
     @media (min-width: $tablet-width) {
+      top: -82px;
       left: 590px;
     }
 
     @media (min-width: $desktop-width) {
+      top: -36px;
+      left: -4px;
+    }
+  }
+}
+
+.feedback-form__fieldset:nth-of-type(3) {
+  padding-top: 68px;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    height: 300px;
+    box-sizing: border-box;
+    padding-top: 84px;
+    padding-left: 0;
+    order: -1;
+  }
+
+  .feedback-form__fieldset-title {
+    text-align: start;
+    padding-left: 44px;
+
+    @media (min-width: $tablet-width) {
       top: 0;
-      left: -58px;
+      padding: 0;
+      width: 280px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 80px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 440px;
+  }
+}
+
+.feedback-form__fieldset:nth-of-type(4) {
+  padding-top: 53px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 648px;
+    padding-left: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .feedback-form__fieldset-title {
+    top: 15px;
+
+    @media (min-width: $tablet-width) {
+      top: 37px;
+      left: 164px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 22px;
+      left: 320px;
     }
   }
 }
 
 .feedback-form__fieldset:nth-of-type(5) {
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    padding: 95px 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+  }
+
   .feedback-form__fieldset-title {
     @media (min-width: $tablet-width) {
-      left: 200px;
+      top: 15px;
+      left: 163px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 320px;
     }
   }
 }
@@ -237,10 +384,12 @@
   background-color: #f2f2f2;
   box-sizing: border-box;
   padding: 15px 20px;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     width: 648px;
+    padding: 18px 21px;
+    margin-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -253,11 +402,26 @@
 }
 
 .feedback-form__submit {
-  @include main_font_index($color:$white, $font-size: 21px, $line-height: 26px, $font-weight: bold);
+  @include main_font_index($color: $white, $font-size: 21px, $line-height: 26px, $font-weight: bold);
   border: none;
   outline: none;
   width: 280px;
   height: 58px;
+  display: block;
+  box-sizing: border-box;
   background-color: $blue;
-  margin-left: 20px;
+  margin-left: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-left: 0;
+    text-align: left;
+    padding-left: 66px;
+    padding-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    padding-left: 150px;
+  }
 }

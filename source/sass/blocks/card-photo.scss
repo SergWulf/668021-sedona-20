@@ -1,7 +1,7 @@
 .card-photo {
   position: relative;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 16px;
+  padding-top: 22px;
   border-top: 1px solid #e5e5e5;
 
   a {
@@ -40,6 +40,18 @@
       width: 1200px;
       height: 400px;
       background: url("../img/photo-sunset-desktop@1x.jpg") no-repeat 0 0;
+    }
+  }
+
+  .card-photo__header {
+    span {
+      @media (min-width: $tablet-width) {
+        padding-left: 7px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-left: 0;
+      }
     }
   }
 }
@@ -87,7 +99,7 @@
     @media (min-width: $tablet-width) {
       width: 324px;
       height: 267px;
-      background: url("../img/photo-bridge-tablet@1x.jpg") no-repeat 0 0;
+      background: url("../img/photo-bridge-tablet@1x1.jpg") no-repeat 0 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -123,8 +135,10 @@
 .card-photo__description {
   display: flex;
   flex-direction: column;
+  padding-top: 11px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     height: 50px;
   }
 }
@@ -142,6 +156,7 @@
 
 .card-photo__author {
   @include main_font_index($font-size: 14px, $line-height: 24px, $text-transform: normal);
+  padding-top: 1px;
   padding-bottom: 10px;
   padding-left: 20px;
 
@@ -153,7 +168,8 @@
 .card-photo__count-likes {
   @include main_font_index($color: $black, $font-size: 14px, $line-height: 24px, $font-weight: bold);
   position: relative;
-  padding-left: 60px;
+  padding-top: 2px;
+  padding-left: 58px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -162,6 +178,7 @@
     width: 50px;
     height: 25px;
     text-align: left;
+    margin-right: 3px;
   }
 
   @media (min-width: $desktop-width) {

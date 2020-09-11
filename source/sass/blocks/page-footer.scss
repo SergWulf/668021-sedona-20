@@ -4,12 +4,21 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 120px;
+    max-height: 120px;
     align-items: center;
+    padding: 36px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -26,20 +35,21 @@
 }
 
 .page-footer__social-list {
-  margin-bottom: 35px;
-
   @media (min-width: $tablet-width) {
-    margin-top: 35px;
+    margin-top: 36px;
+    margin-left: -13px;
   }
 }
 
 .page-footer__developed {
   display: flex;
   justify-content: flex-start;
+  padding-top: 5px;
 }
 
 .page-footer__developed-header {
   @include main_font_index($color:$black, $font-size: 14px, $line-height: 26px);
+  margin-left: -1px;
   margin-right: 10px;
   margin-top: 5px;
 }

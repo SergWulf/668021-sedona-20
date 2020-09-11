@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   min-width: 320px;
-  min-height: 160px;
+  min-height: 158px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat bottom;
 
   @media (min-width: $tablet-width) {
@@ -50,13 +50,16 @@
   top: 50px;
 
   @media (min-width: $tablet-width) {
-    width: 468px;
-    left: 150px;
+    width: 457px;
+    height: 78px;
+    top: 95px;
+    left: 157px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 468px;
-    left: 370px;
+    width: 460px;
+    left: 368px;
+    top: 101px;
   }
 }
 
@@ -86,12 +89,14 @@
     top: 90px;
 
     @media (min-width: $tablet-width) {
-      width: 468px;
-      left: 150px;
+      width: 461px;
+      height: 350px;
+      top: 77px;
+      left: 153px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 468px;
+      width: 460px;
       left: 370px;
     }
   }
