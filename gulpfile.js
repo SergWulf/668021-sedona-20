@@ -19,7 +19,7 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    //   .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -102,12 +102,16 @@ const clean = () => {
   return del("build");
 }
 
+exports.clean = clean;
+
 const build = gulp.series(
   clean,
   copy,
   styles,
   html
 );
+
+exports.build = build;
 
 // Watcher
 
